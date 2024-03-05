@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const fn1 = async (e) => {
+        var e = e["source"];
+        console.log(e);
+      };
+      const fn2 = (e) => {
+        var e = e["source"];
+        console.log(e);
+      };
+      fn1({ source: 123 });
+      fn2({ source: 123 });
+    </script>
+  </body>
+</html>
